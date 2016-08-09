@@ -15,6 +15,12 @@
     <link rel="apple-touch-startup-image" href="images/haoroomsicon.jpg" />
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/swiper-3.3.1.min.css" />
+    <style>
+       /* .add:link{
+            background-color:white;
+        }*/
+
+    </style>
 </head>
 <body>
 <nav id="nav">
@@ -55,13 +61,13 @@
     <input type="button" class="addcartbtn" value="加入购物车" />
 </section>
 <script src="script/libs/jquery.min.js"></script>
-<script src="script/info.js"></script>
+<script src="script/common.js"></script>
 <script>
     $(function(){
          var numsd = document.getElementById("addnums");
          var numsR = document.getElementById("reducenums");
          var cartA = document.getElementsByClassName("addcartbtn");
-
+         document.body.addEventListener('touchstart', function () { }); 
         numsd.addEventListener("click",addnums);
          numsR.addEventListener("click",reducenums);
         cartA[0].addEventListener("click",addcatA);

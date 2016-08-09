@@ -91,5 +91,35 @@
         <div class="totalprice">总价：<span class="green">￥200000</span></div>
         <div class="jiesuanbtn" onclick="javascript:void(window.location.href='orderlist.html')">结算</div>
     </section>
+<script src="script/libs/jquery.min.js"></script>
+<script src="script/common.js"></script>
+<script>
+$(function(){
+    var addBtn = document.getElementsByClassName("add");
+    [].forEach.call(addBtn,function(div){
+        div.addEventListener("click",addnumsss);
+    });
+    var reducBtn = document.getElementsByClassName("reduce");
+    [].forEach.call(reducBtn,function(div){
+        div.addEventListener("click",reducenumss);
+    })
+    $(".delbtn").on("click",function(){
+        $(this).parents("li").remove();
+        if($(".cartlist").children("li").length<1){
+            $(".cartlist").hide();
+            $(".onthebottom").hide();
+            $(".null_shopping").show();
+        }
+    })
+    $(".clearcart").on("click",function () {
+        $(".cartlist").find("li").each(function (){
+               $(this).remove();
+        });
+        $(".cartlist").hide();
+        $(".onthebottom").hide();
+        $(".null_shopping").show();
+    })
+})
+</script>
 </body>
 </html>

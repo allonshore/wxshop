@@ -17,6 +17,33 @@ function addnums(){
       /*num.value=nums;*/
     num.setAttribute("value",nums);
 }
+function addnumsss(){
+    var number=parseInt($(this).prev().val());
+    if(!isNaN(number)){
+        if(number<1){
+            number=1;
+        }else{
+            number+=1;
+        }
+    }else{
+        number=1
+
+    }
+    $(this).prev().val(number);
+}
+function reducenumss(){
+    var number=parseInt($(this).next().val());
+    if(!isNaN(number)){
+        if(number<2){
+            number=1;
+        }else{
+            number-=1;
+        }
+    }else{
+        number=1
+    }
+    $(this).next().val(number);
+}
 function reducenums(){
     var num =document.getElementById("cartnumbers")
     var nums = parseInt(document.getElementById("cartnumbers").value);
