@@ -13,7 +13,8 @@
     <meta name="full-screen" content="yes">
     <!-- QQ强制全屏 -->
     <meta name="x5-fullscreen" content="true">
-    <title>广联发商场</title>
+    <title>手机商场</title>
+    <script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible_css.js,flexible.js"></script>
     <link rel="apple-touch-icon-precomposed" href="images/haoroomsicon.jpg" />
     <link rel="apple-touch-startup-image" href="images/haoroomsicon.jpg" />
     <link rel="stylesheet" href="css/styles.css" />
@@ -23,33 +24,33 @@
 <nav id="nav">
     <ul class="navlist">
         <li id="n_0"><a href="index.html"><span class="active"></span></a></li>
-        <li id="n_1"><a href="usercenter.html"><span></span></a></li>
-        <li id="n_2"><a href="cart.html"><span></span></a></li>
+        <li id="n_1"><a href="cart.html"><span></span></a></li>
+        <li id="n_2"><a href="usercenter.html"><span></span></a></li>
         <li id="n_3"><a href="productlist.html"><span></span></a></li>
     </ul>
 </nav>
 <section class="productul content">
     <ul class="lists">
         <li>
-            <a href="">
+            <a href="info.html">
                 <div class="triangle-topleft zhuanshu"></div>
                 <span class="shuxing" data_url="productinfo.html">专属</span>
                 <div class="leftimages fl"><img src="images/product/product1.png"></div>
                 <div class="productcontent fr">
-                    <p class="ptitle pl10">广联达变更预算</p>
-                    <p class="pdes pl10">简介这里介绍这里解决杀杀杀杀杀杀杀杀杀杀阿三水水水水水水sssss </p>
+                    <p class="ptitle pl10">apple6</p>
+                    <p class="pdes pl10">简介这里介绍这里 </p>
                     <p class="pprice pl10">价格：<span class="green">$5000</span></p>
                 </div>
             </a>
         </li>
         <li>
-            <a href="">
+            <a href="info.html">
                 <div class="triangle-topleft rexiao"></div>
                 <span class="shuxing" data_url="productinfo.html">热销</span>
                 <div class="leftimages fl"><img src="images/product/product1.png"></div>
                 <div class="productcontent fr">
-                    <p class="ptitle pl10">广联达变更预算</p>
-                    <p class="pdes pl10">简介这里介绍这里解决杀杀杀杀杀杀杀杀杀杀阿三水水水水水水sssss </p>
+                    <p class="ptitle pl10">apple 6 plus</p>
+                    <p class="pdes pl10">苹果手机最新款式 </p>
                     <p class="pprice pl10">价格：<span class="green">$5000</span></p>
                 </div>
             </a>
@@ -74,7 +75,24 @@
 <script src="script/libs/jquery.min.js"></script>
 <script src="script/plugs/dropload.js"></script>
 <script>
+    function GetUrl(){
+        var url1 = location.search;
+        var theRequest = {};
+        if (url1.indexOf("?") != -1) {
+            var str = url1.substr(1);
+            var strs1 = str.split("&");
+            for (var i = 0; i < strs1.length; i++) {
+                theRequest[strs1[i].split("=")[0]] = (strs1[i].split("=")[1]);
+
+            }
+        }
+        return theRequest;
+    }
     $(function(){
+        var kk = GetUrl();
+        var f = kk.gId;
+        alert(f);
+;        localStorage.setItem("d",f);
         var counter = 0;
         // 每页展示4个
         var num = 4;
@@ -99,7 +117,7 @@
                                     +'<span class="date">'+data.lists[i].date+'</span>'
                                     +'</a>';*/
                             result+='<li>'+
-                                    '<a href="">'+
+                                    '<a href="info.html">'+
                                     '<div class="triangle-topleft xiangou"></div>'+
                                     '<span class="shuxing" data_url="productinfo.html">限购</span>'+
                                     '<div class="leftimages fl"><img src="images/product/product1.png"></div>'+
