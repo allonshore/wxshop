@@ -16,12 +16,6 @@
     <ConfirmationsSetting value="0" id="添加" />
     <ConfirmationsSetting value="0" id="移除" />
   </component>
-<<<<<<< HEAD
-=======
-  <component name="ProjectPlainTextFileTypeManager">
-    <file url="file://$PROJECT_DIR$/../wxshop/script/jquery.min.js" />
-  </component>
->>>>>>> origin/master
   <component name="masterDetails">
     <states>
       <state key="ScopeChooserConfigurable.UI">

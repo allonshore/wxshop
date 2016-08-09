@@ -1,16 +1,9 @@
 @charset "UTF-8";
-<<<<<<< HEAD
 /*CSS reset*/
 /* CSS Document */
 body, button, select, textarea, input, label, option, fieldset, legend {
     font-family: 微软雅黑;
 
-=======
-/* CSS Document */
-body, button, select, textarea, input, label, option, fieldset, legend {
-    font-family: 微软雅黑E\8F6F\96C5\9ED1,Tahoma,Verdana;
-    font-size: 12px;
->>>>>>> origin/master
     line-height: 18px;
     color: #444; }
 body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, legend, input, textarea, button, p, blockquote, th, td {
@@ -52,10 +45,7 @@ li {
     display: block; }
 .hid {
     overflow: hidden; }
-<<<<<<< HEAD
 /*浮动清除*/
-=======
->>>>>>> origin/master
 .clearfix {
     *zoom: 1; }
 .clearfix:after {
@@ -65,29 +55,17 @@ li {
     height: 0;
     content: '.';
     font-size: 0; }
-<<<<<<< HEAD
 /*渐变*/
-=======
-
->>>>>>> origin/master
 .jianbian, #nav .navlist {
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f4f4f4), color-stop(100%, #eee));
     background: -webkit-linear-gradient(top, #f4f4f4 0, #eee 100%);
     background: linear-gradient(to bottom, #f4f4f4 0, #eee 100%); }
-<<<<<<< HEAD
 /*边框阴影*/
-=======
-
->>>>>>> origin/master
 .bottomshadow, #nav .navlist {
     border-bottom: solid 1px #B3B3B3;
     -webkit-box-shadow: 0 1px 1px 0 #DFDFDF;
     box-shadow: 0 1px 1px 0 #DFDFDF; }
-<<<<<<< HEAD
 /*导航*/
-=======
-
->>>>>>> origin/master
 #nav{
     width:100%;
     position:fixed;
@@ -116,7 +94,7 @@ li {
     display: inline-block;
     width: 50px;
     height: 50px;
-    background: url(../images/icon/icon.png) no-repeat 0 -46px;
+    background: url(../images/icon/icon.png) no-repeat 0 0;
     background-size: 214px auto; }
 #nav .navlist li a .active {
     background-position: 0 0; }
@@ -124,20 +102,17 @@ li {
     border-right: none; }
 #nav .navlist #n_3 a span {
     background-position: -101px -46px; }
-#nav .navlist #n_3 a .active {
-    background-position: -101px 0; }
+#nav .navlist #n_3 a :visited {
+    background-position: -566px 0; }
 #nav .navlist #n_2 a span {
     background-position: -161px -46px; }
-#nav .navlist #n_2 a .active {
+#nav .navlist #n_2 a :visited {
     background-position: -161px 0; }
 #nav .navlist #n_1 a span {
     background-position: -51px -46px; }
-#nav .navlist #n_1 a .active {
+#nav .navlist #n_1 a:visited {
     background-position: -51px 0; }
-<<<<<<< HEAD
 /*轮播*/
-=======
->>>>>>> origin/master
 .indexslide {
     position: relative;
     top:51px;
@@ -163,7 +138,6 @@ li {
     background-color:#000;
     z-index:999;
 }
-<<<<<<< HEAD
 .indexslide #topSlider .topzhezhao a {
     width:100px;
     height:30px;
@@ -187,12 +161,6 @@ li {
     color:white;
     text-indent:12px
 }
-=======
-.indexslide #topSlider .topzhezhao a {width:100px;height:30px;line-height:30px;background-color:#15bd10;color:#fff;border-radius:10px;}
-.indexslide #topSlider .topzhezhao .leftslidecontent{width:20px;height:45px;float:left;}
-.indexslide #topSlider .topzhezhao p{line-height:20px;display:block;width:200px;overflow:hidden;text-overflow:ellipsis;
-                                      white-space: nowrap;color:#fff;text-indent:12px}
->>>>>>> origin/master
 .indexslide #topSlider .topzhezhao p span{color:#15bd10;}
 .productul{
     position:relative;
@@ -204,7 +172,6 @@ li {
 }
 .productul ul {width:99%;}
 .productul ul li {
-<<<<<<< HEAD
     min-height: 125px;
      overflow:hidden;
     background-color:#fff;
@@ -216,17 +183,12 @@ li {
     display:block;
     overflow:hidden;
 }
-=======
-    min-height: 125px;overflow:hidden;background-color:#fff;-webkit-box-shadow:0 0 5px #ccc;margin: 10px;border: 1px solid #f2f2f2;}
-.productul ul li a {width:100%;display:block;overflow:hidden;}
->>>>>>> origin/master
 .productul ul li a .triangle-topleft {width:0;
     height:0;
     border-top:60px solid #1aa818;
     border-right:60px solid transparent;
     position:relative;
     z-index:999;
-<<<<<<< HEAD
     cursor: pointer;
 }
 .productul ul li a  .rexiao {
@@ -239,15 +201,6 @@ li {
     border-top-color: #1aa818; 
 }
 /*倒角*/
-=======
-    cursor: pointer;}
-.productul ul li a  .rexiao {
-    border-top-color: #d50806; }
-.productul ul li a  .xiangou {
-    border-top-color: #ff7301; }
-.productul ul li a  .zhuanshu {
-    border-top-color: #1aa818; }
->>>>>>> origin/master
 .productul li a .shuxing {
     position: relative;
     z-index: 999;
@@ -264,7 +217,6 @@ li {
     display: block;
     padding-top: 5px;
     padding-left: 10px;
-<<<<<<< HEAD
     cursor: pointer; 
 }
 .productul li a .leftimages {
@@ -282,37 +234,17 @@ li {
     width: calc(100% - 100px);
     margin-top: -40px; 
 }
-=======
-    cursor: pointer; }
-.productul li a .leftimages {
-    width: 100px;
-    height: 100px;
-    margin-top: -35px; }
-.productul li a .leftimages img {
-    width: 100px;
-    height: 100px;
-    border: 0; }
-.productul li a .productcontent {
-    width: 64%;
-    width: calc(100% - 100px);
-    margin-top: -40px; }
->>>>>>> origin/master
 .productul li a .productcontent .ptitle {
     font-size: 16px;
     color: #4a534e;
     font-weight: bold;
     display: block;
-<<<<<<< HEAD
     font-family: "Microsoft YaHei"; 
 }
-=======
-    font-family: "Microsoft YaHei"; }
->>>>>>> origin/master
 .productul li a .productcontent .pdes {
     font-size: 13px;
     color: #999;
     margin-top: 5px;
-<<<<<<< HEAD
     display: block; 
 }
 .productul li a .productcontent .pprice {
@@ -323,10 +255,3 @@ li {
 .productul li a .productcontent .daojishi{
     color: red;
 }
-=======
-    display: block; }
-.productul li a .productcontent .pprice {
-    margin-top: 10px;
-    font-size: 14px;
-    color: #4a4a4a; }
->>>>>>> origin/master
