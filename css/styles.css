@@ -635,6 +635,7 @@ li {
     cursor: pointer; 
 }
 /*用户中心页面*/
+
 .userinfo {
     width: 9.9rem;
     overflow: hidden;
@@ -684,3 +685,286 @@ li {
 .pt20 {
   padding-top: 0.5rem; 
 }
+/*订单列表*/
+.cartshadow, .cart_content .cartlist li, .addresslist, .voiceslist, .shopslist {
+  min-height: 1.875rem;
+  overflow: hidden;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 0.125rem #ccc;
+  -moz-box-shadow: 0 0 0.125rem #ccc;
+  box-shadow: 0 0 0.125rem #ccc;
+  border: 0.025rem solid #f2f2f2;
+  -moz-border-radius: 0.25rem;
+  border-radius: 0.25rem; 
+}
+.addresslist, .voiceslist, .shopslist {
+    margin: 0.2rem;
+    position: relative;
+    top: 1.375rem;
+    left: 0;
+}
+.order_content {
+    margin: 0 auto;
+    min-height: 9.5rem;
+    position: relative;
+    width: 9.5rem;
+    overflow: scroll;
+}
+
+.add_operate {
+    font-size: 16px;
+    position: relative;
+    left: 0;
+    top: 1.375rem;
+}
+
+.add_operate .enter {
+    width: 8.9rem;
+    background-color: #28c728;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#18b218), to(#28c728));
+    background-image: -webkit-linear-gradient(top, #18b218, #28c728);
+    background-image: linear-gradient(to bottom, #18b218, #28c728);
+    display: block;
+    text-align: center;
+    height: 1.0rem;
+    line-height: 1.0rem;
+    border: 0.025rem solid #31b231;
+    border-radius: 0.125rem;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 0.125rem auto;
+}
+
+.add_operate .enter:hover {
+    background-color: #3ede30;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#3ede30), to(#3ede30));
+    background-image: -webkit-linear-gradient(top, #18b218, #3ede30);
+    background-image: linear-gradient(to bottom, #18b218, #3ede30);
+}
+
+.add_title {
+    color: #666;
+    font-size: 16px;
+    margin-top: 0.125rem;
+    margin-left: 0.2rem;
+}
+
+.address_item, .fill_in_content, .voiceinfo {
+    font-size: 14px;
+    line-height: 0.5rem;
+    margin: 0.25rem 0.0rem 0.25rem 0.25rem;
+}
+
+.address_item li {
+    line-height: 0.625rem;
+}
+
+.radio {
+    float: left;
+    width: 0.5rem;
+}
+
+.address_item li.name, .address_item li.mobile {
+    text-indent: 20px;
+    clear: both;
+}
+
+#order_form .message {
+    display: block;
+}
+
+#order_form #postscript {
+    width: 9.5rem;
+    padding: 0.05rem;
+}
+
+.receive_add li.fashion, .receive_add li.pay {
+    float: left;
+}
+
+.address_item {
+    border-bottom: 0.025rem dashed #ddd;
+}
+
+.address_item:last-child {
+    border-bottom: none;
+}
+
+.new_address {
+    border-bottom: none;
+}
+
+#address_form .text {
+    height: 1.0rem;
+    margin: 0.125rem 0;
+    border-radius: 0.125rem;
+    border: 0.025rem solid #ddd;
+    text-indent: 0.25rem;
+    width: 7.9rem; 
+}
+
+#address_form select {
+    margin-left: 1rem;
+    border-radius: 0.125rem;
+    border: 0.025rem solid #ddd;
+    height: 0.95rem;
+    margin: 0.125rem 0;
+    width: 1.95rem;
+}
+
+.fill_in_content, .voiceinfo {
+    padding: 0.25rem;
+    margin-right: 0.375rem;
+    background-color: #f2f2f2;
+}
+
+.voiceinfo {
+    margin-top: 0;
+}
+
+.thevioceselect {
+    width: 9.9rem;
+    height: 0.875rem;
+    border-radius: 0.125rem;
+    border: 0.025rem solid #ddd;
+    margin: 0.125rem 0 0 0;
+}
+
+.voicetait {
+    width: 4rem;
+    height: 0.875rem;
+    border: 0.025rem solid #ddd;
+}
+
+.voiceinput {
+    width: 4.5rem;
+    height: 0.75rem;
+    margin-left: 0.5rem;
+    border: 0.025rem solid #ddd;
+}
+
+.shoptitles {
+    background-color: #eeeeee;
+    color: #666;
+    height: 0.7rem;
+    line-height: 0.7rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.shopproductlist {
+    height: 1.25rem;
+}
+
+.shopproductlist td {
+    text-align: center;
+    border-right: #EDEDED 0.025rem solid;
+    height: 1.25rem;
+    border-bottom: #EDEDED 0.025rem solid;
+}
+
+.shopproductlist td:last-child {
+    border-right: none;
+}
+
+.shopslist textarea {
+    width: 8rem;
+    margin-left: 0.5rem;
+    border: 0.025rem solid #ddd;
+}
+
+.confirmbtn {
+    width: 10rem;
+    left: 0px;
+    position: fixed;
+    bottom: 0px;
+    z-index: 10000;
+    margin: 0 auto;
+    display: block;
+}
+
+.confirmbtn_b {
+    width: 9.8rem;
+    background-color: #28c728;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#18b218), to(#28c728));
+    background-image: -webkit-linear-gradient(top, #18b218, #28c728);
+    background-image: linear-gradient(to bottom, #18b218, #28c728);
+    display: block;
+    text-align: center;
+    height: 1.0rem;
+    line-height: 1.0rem;
+    border: 0.025rem solid #31b231;
+    border-radius: 0.125rem;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+.confirmbtn_b:hover {
+    background-color: #3ede30;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#3ede30), to(#3ede30));
+    background-image: -webkit-linear-gradient(top, #18b218, #3ede30);
+    background-image: linear-gradient(to bottom, #18b218, #3ede30);
+}
+
+.successp {
+    text-indent: 0.5rem;
+    margin-top: 0.25rem;
+    line-height: 0.625rem;
+    padding-left: 0.125rem;
+}
+
+.huodao {
+    height: 0.95rem;
+    min-width: 3.75rem;
+    background: url(../images/huodao.png) 1.125rem center no-repeat;
+}
+
+.userinfo {
+    width: 9.9rem;
+    overflow: hidden;
+    margin: 0.25rem auto;
+    position: relative;
+    top: 1.25rem;
+}
+
+.nicheng {
+    color: #f9a00a;
+    font-size: 0.35rem;
+}
+
+.contentlist {
+    height: 1.5rem;
+    width: 9rem;
+    padding-right: 0.75rem;
+    border: 0.025rem solid #f2f2f2;
+    border-right: none;
+    font-size: 0.45rem;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    color: #666;
+    background: url("../images/goforword.png") right center no-repeat;
+}
+
+.contentlist:last-child {
+    border-bottom: none;
+}
+
+.userlist {
+    min-height: 1.875rem;
+    overflow: hidden;
+    background-color: #fff;
+    -webkit-box-shadow: 0 0 0.125rem #ccc;
+    -moz-box-shadow: 0 0 0.125rem #ccc;
+    box-shadow: 0 0 0.125rem #ccc;
+    border: 0.025rem solid #f2f2f2;
+    margin: 0.25rem;
+    -moz-border-radius: 0.25rem;
+    border-radius: 0.25rem;
+}
+.order_content .mb50 {
+  margin-bottom: 2rem; 
+  }

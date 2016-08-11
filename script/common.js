@@ -1,5 +1,5 @@
 /**
- * Created by qcxx on 2016/8/8.
+ * Created by qcxx on 2016/7/6
  */
 function addnums(){
     var num =document.getElementById("cartnumbers")
@@ -17,6 +17,24 @@ function addnums(){
       /*num.value=nums;*/
     num.setAttribute("value",nums);
 }
+function addkk(node){
+     var c = parseInt(node.previousElementSibling.value);
+             console.log(c);
+        if(!isNaN(c)){
+           if(c<1){
+               c = 1;
+           }else{
+               c+=1;
+           }
+       }else{
+           c = 1;
+       }          
+     node.previousElementSibling.value=c; 
+     console.log(c);
+     console.log(c);
+     console.log(c);
+}
+
 function addnumsss(){
     var number=parseInt($(this).prev().val());
     if(!isNaN(number)){
@@ -84,4 +102,12 @@ function addcatA(e){
         });
     }
 
+}
+function set_address(){
+        var addr_id=$("input[name='address_options']:checked").val();
+        if(addr_id == 0){
+            $("#address_form").show();
+        }else{
+            $("#address_form").hide();
+        }
 }

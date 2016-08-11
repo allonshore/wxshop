@@ -19,7 +19,9 @@
        /* .add:link{
             background-color:white;
         }*/
-
+     .add:active{
+     	background-color:#D50806;
+     }
     </style>
 </head>
 <body>
@@ -63,15 +65,38 @@
 <script src="script/libs/jquery.min.js"></script>
 <script src="script/common.js"></script>
 <script>
+
+
     $(function(){
          var numsd = document.getElementById("addnums");
          var numsR = document.getElementById("reducenums");
          var cartA = document.getElementsByClassName("addcartbtn");
          document.body.addEventListener('touchstart', function () { }); 
-        numsd.addEventListener("click",addnums);
+      /*   var bnm = document.getElementsByClassName("add");
+         for(var i=0;i<bnm.length;i++){
+        bnm[i].addEventListener("click",this);
+        }*/
+         numsd.addEventListener("touchend",function(){
+         	   addnums();
+         	  return false;
+         });
          numsR.addEventListener("click",reducenums);
         cartA[0].addEventListener("click",addcatA);
-    })
+        var num =document.getElementsByClassName("add");
+                        var b = [];
+                    for(var i = 0;i<num.length;i++){
+                    	    var c  = parseInt(num[i].previousElementSibling.value);
+                    	b.push(c>1&&!isNaN(c)?c++:c=1);
+                    }
+                    
+               [].forEach.call(num,function(div){
+               	     
+               });
+                    
+                     var t=num[0].nextElementSibling;
+                     
+                  
+    });
 </script>
 </body>
 </html>
